@@ -39,6 +39,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="./css/media-query.css" type="text/css" />
     <link rel="stylesheet" href="./css/styles.css" type="text/css" />
@@ -49,6 +52,28 @@
 <body>
     <header>
         <!-- Simple and Modern - slick slider -->
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./img/Logo.png" alt="Logo" class="logo-img">
+                </div>
+                <ul class="nav-links">
+                    <li class="nav-item active montserrat f2-400" onclick="toggleActive(this)">About Us</li>
+                    <li class="nav-item montserrat f2-400" onclick="toggleActive(this)">Projects</li>
+                    <li class="nav-item montserrat f2-400" onclick="toggleActive(this)">News</li>
+                    <li class="nav-item montserrat f2-400" onclick="toggleActive(this)">Contact</li>
+                </ul>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </nav>
+            <div class="titles-top-of-page">
+                <h1 class="titles-top-of-page__h1 montserrat f3-700">SIMPLE & MODERN</h1>
+                <h2 class="titles-top-of-page__h2 montserrat f1-5-400">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h2>
+            </div>
+        </div>
     </header>
     <main>
         <!-- What We Do Section -->
@@ -57,6 +82,8 @@
         <!-- Google Maps API Section -->
         <!-- Get in Touch Section -->
     </main>
+
+    <!-- Footer -->
     <footer>
 
     </footer>

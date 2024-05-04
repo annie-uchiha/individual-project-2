@@ -12,12 +12,91 @@
   font-style: normal;
 }
 
-.f2-700 {
-  font-size: 2 rem;
+.f3-700 {
+  font-size: 3rem;
   font-weight: 700;
 }
 
-.f2-400 {
+.f2-700 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.f1-5-400 {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+html {
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
+
+.navbar-container {
+  position: relative;
+  height: 800px;
+  background-image: url(../img/headre-container.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -o-linear-gradient($direction, $colors);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from($direction),
+      to($colors)
+    );
+    background: linear-gradient($direction, $colors);
+    opacity: 0.5; // Adjust opacity as needed
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+}
+.navbar .nav-links .nav-item {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.navbar .nav-links .nav-item.active .circle {
+  background-color: #ffffff;
+}
+.navbar .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  transition: background-color 0.3s ease;
+}
+.navbar .social-icons a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+.navbar .social-icons a .fa-brands {
+  font-size: 2rem;
+}
+
+.titles-top-of-page {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 300px;
+  margin-bottom: 200px;
 }

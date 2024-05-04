@@ -1,3 +1,65 @@
 @use "fonts" as *;
 @use "colors" as *;
 @use "mixin" as *;
+
+html {
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
+
+.navbar-container {
+  height: 800px;
+  background: url(../img/headre-container.jpg) no-repeat center/cover,
+    -o-linear-gradient($direction, $colors),
+    -webkit-gradient(linear, left top, left bottom, from($direction), to($colors)),
+    linear-gradient($direction, $colors);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+
+    .nav-item {
+      margin-right: 20px;
+      cursor: pointer;
+
+      &.active .circle {
+        background-color: $textColor;
+      }
+    }
+  }
+
+  .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid $textColor;
+    transition: background-color 0.3s ease;
+  }
+
+  .social-icons {
+    a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: black;
+
+      .fa-brands {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.titles-top-of-page {
+  color: $textColor;
+  text-align: center;
+  margin-top: 300px;
+  margin-bottom: 200px;
+}
