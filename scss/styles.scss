@@ -8,16 +8,23 @@ html {
 }
 
 .navbar-container {
-  height: 800px;
-  background: url(../img/headre-container.jpg) no-repeat center/cover,
-    -o-linear-gradient($direction, $colors),
-    -webkit-gradient(linear, left top, left bottom, from($direction), to($colors)),
-    linear-gradient($direction, $colors);
+  background-image: linear-gradient(
+      to right,
+      rgba(85, 183, 255, 0.9),
+      rgba(126, 90, 255, 0.9)
+    ),
+    url("../img/headre-container.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  position: relative;
+  padding-top: 52px;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px 20px;
 

@@ -33,36 +33,18 @@ html {
 }
 
 .navbar-container {
-  position: relative;
-  height: 800px;
-  background-image: url(../img/headre-container.jpg);
+  background-image: linear-gradient(to right, rgba(85, 183, 255, 0.9), rgba(126, 90, 255, 0.9)), url("../img/headre-container.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: -o-linear-gradient($direction, $colors);
-    background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from($direction),
-      to($colors)
-    );
-    background: linear-gradient($direction, $colors);
-    opacity: 0.5; // Adjust opacity as needed
-  }
+  height: 100vh;
+  color: white;
+  position: relative;
+  padding-top: 52px;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px 20px;
 }
