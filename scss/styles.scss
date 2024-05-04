@@ -8,11 +8,7 @@ html {
 }
 
 .navbar-container {
-  background-image: linear-gradient(
-      to right,
-      rgba(85, 183, 255, 0.9),
-      rgba(126, 90, 255, 0.9)
-    ),
+  background-image: linear-gradient($direction, $colors),
     url("../img/headre-container.jpg");
   background-repeat: no-repeat;
   background-size: cover;
