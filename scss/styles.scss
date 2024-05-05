@@ -125,3 +125,11 @@ a {
 .what-we-do__btn2 {
   @include btn-style;
 }
+
+// LATEST NEWS - SLICK SLIDER
+
+.latest-news-container {
+  background-color: url("../img/Background-latest-news.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
