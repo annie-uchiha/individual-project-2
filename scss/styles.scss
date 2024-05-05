@@ -67,4 +67,22 @@ html {
   margin-bottom: 200px;
   animation: fadeInDown;
   animation-duration: 2s;
+  .fa-circle-arrow-down {
+    padding-top: 200px;
+    font-size: 2rem;
+  }
+}
+
+.slick-slider-just-dots-no-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 20px;
+  width: 20px;
+  transform: translateY(-300px);
+  padding-left: 2800px;
+
+  img {
+    margin-top: 20px;
+  }
 }
