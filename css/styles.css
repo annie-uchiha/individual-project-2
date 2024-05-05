@@ -79,6 +79,8 @@ html {
 .titles-top-of-page {
   color: #ffffff;
   text-align: center;
-  margin-top: 300px;
+  padding-top: 500px;
   margin-bottom: 200px;
+  animation: fadeInDown;
+  animation-duration: 2s;
 }
