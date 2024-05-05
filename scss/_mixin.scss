@@ -1,0 +1,17 @@
+@use "colors" as *;
+
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+@mixin btn-style {
+  border: 1px solid $textTitleColor;
+  padding: 10px 20px;
+  background-color: $textColor;
+  color: $textTitleColor;
+  cursor: pointer;
+  margin: 20px;
+}

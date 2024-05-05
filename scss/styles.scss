@@ -7,13 +7,17 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navbar-container {
   background-image: linear-gradient($direction, $colors),
     url("../img/headre-container.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  color: white;
+  color: $textColor;
   position: relative;
   padding-top: 50px;
 }
@@ -67,6 +71,7 @@ html {
   margin-bottom: 200px;
   animation: fadeInDown;
   animation-duration: 2s;
+
   .fa-circle-arrow-down {
     padding-top: 200px;
     font-size: 2rem;
@@ -85,4 +90,38 @@ html {
   img {
     margin-top: 20px;
   }
+}
+
+//WHAT WE DO
+
+.what-we-do__title {
+  color: $textTitleColor;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.what-we-do__container1 {
+  @include flex-row-center;
+  color: $textTitleColor;
+
+  .what-we-do__text1 {
+    margin-left: 100px;
+  }
+}
+
+.what-we-do__btn1 {
+  @include btn-style;
+}
+
+.what-we-do__container2 {
+  @include flex-row-center;
+  color: $textTitleColor;
+
+  .what-we-do__text2 {
+    margin-right: 100px;
+  }
+}
+
+.what-we-do__btn2 {
+  @include btn-style;
 }

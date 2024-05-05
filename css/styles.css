@@ -32,12 +32,16 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navbar-container {
   background-image: linear-gradient(to right, rgba(85, 183, 255, 0.9), rgba(126, 90, 255, 0.9)), url("../img/headre-container.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  color: white;
+  color: #ffffff;
   position: relative;
   padding-top: 50px;
 }
@@ -100,4 +104,50 @@ html {
 }
 .slick-slider-just-dots-no-slide img {
   margin-top: 20px;
+}
+
+.what-we-do__title {
+  color: #2c4058;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.what-we-do__container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 200px;
+  color: #2c4058;
+}
+.what-we-do__container1 .what-we-do__text1 {
+  margin-left: 100px;
+}
+
+.what-we-do__btn1 {
+  border: 1px solid #2c4058;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #2c4058;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.what-we-do__container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 200px;
+  color: #2c4058;
+}
+.what-we-do__container2 .what-we-do__text2 {
+  margin-right: 100px;
+}
+
+.what-we-do__btn2 {
+  border: 1px solid #2c4058;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #2c4058;
+  cursor: pointer;
+  margin: 20px;
 }
