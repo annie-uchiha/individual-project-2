@@ -133,25 +133,30 @@ a {
 // LATEST NEWS - SLICK SLIDER
 
 .latest-news-container {
-  background-color: url("../img/Background-latest-news.png");
+  background-image: url("../img/Background-latest-news.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
 
-  .latest-news-container__title {
-    color: $textTitleColor;
-    text-align: center;
-    margin-top: 60px;
-  }
+.latest-news-container__title {
+  color: $textTitleColor;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .latest-news-slick-slider__cards {
   color: $textTitleColor;
-  width: 514px;
-  height: 370px;
+  @include flex-row-center;
+  width: 370px;
+  height: 514px;
   border: 1px solid $textColor;
 }
 
 // GALLERY
+
+.gallery-section__title {
+  margin-top: 100px;
+}
 
 .gallery-section__img {
   @include flex-row-center;

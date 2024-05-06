@@ -157,21 +157,30 @@ a {
 }
 
 .latest-news-container {
-  background-color: url("../img/Background-latest-news.png");
+  background-image: url("../img/Background-latest-news.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.latest-news-container .latest-news-container__title {
+
+.latest-news-container__title {
   color: #2c4058;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .latest-news-slick-slider__cards {
   color: #2c4058;
-  width: 514px;
-  height: 370px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 200px;
+  width: 370px;
+  height: 514px;
   border: 1px solid #ffffff;
+}
+
+.gallery-section__title {
+  margin-top: 100px;
 }
 
 .gallery-section__img {
