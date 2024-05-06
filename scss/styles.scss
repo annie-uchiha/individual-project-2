@@ -7,7 +7,13 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  text-align: center;
+  color: $textTitleColor;
+}
+
 a {
+  color: $textColor;
   text-decoration: none;
 }
 
@@ -95,9 +101,7 @@ a {
 //WHAT WE DO
 
 .what-we-do__title {
-  color: $textTitleColor;
-  text-align: center;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .what-we-do__container1 {
@@ -132,4 +136,34 @@ a {
   background-color: url("../img/Background-latest-news.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+  .latest-news-container__title {
+    color: $textTitleColor;
+    text-align: center;
+    margin-top: 60px;
+  }
+}
+
+.latest-news-slick-slider__cards {
+  color: $textTitleColor;
+  width: 514px;
+  height: 370px;
+  border: 1px solid $textColor;
+}
+
+// GALLERY
+
+.gallery-section__img {
+  @include flex-row-center;
+  .gallery-section__img1 {
+    margin-right: 10px;
+  }
+  .gallery-section__group1img {
+    margin-bottom: 10px;
+  }
+}
+
+.gallery-section__btn {
+  @include btn-style;
+  justify-content: center;
 }

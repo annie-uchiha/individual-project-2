@@ -60,14 +60,14 @@
                     <img src="./img/Logo.png" alt="Logo" class="logo-img">
                 </div>
                 <ul class="nav-links">
-                    <li class="nav-item active montserrat f2-400" onclick="toggleActive(this)"><i
-                            class="fa-solid fa-circle"></i> About Us</li>
-                    <li class="nav-item montserrat f2-400" onclick="toggleActive(this)"><i
-                            class="fa-regular fa-circle"></i> Projects</li>
-                    <li class="nav-item montserrat f2-400" onclick="toggleActive(this)"><i
-                            class="fa-regular fa-circle"></i> News</li>
-                    <li class="nav-item montserrat f2-400" onclick="toggleActive(this)"><i
-                            class="fa-regular fa-circle"></i> Contact</li>
+                    <li class="nav-item active montserrat f2-400"><a href=""><i class="fa-solid fa-circle"></i> About
+                            Us</a></li>
+                    <li class="nav-item montserrat f2-400"><a href="#what-we-do"><i class="fa-regular fa-circle"></i>
+                            Projects</a></li>
+                    <li class="nav-item montserrat f2-400"><a href="#latest-news"><i class="fa-regular fa-circle"></i>
+                            News</a></li>
+                    <li class="nav-item montserrat f2-400"><a href=""><i class="fa-regular fa-circle"></i> Contact</a>
+                    </li>
                 </ul>
                 <div class="social-icons">
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -95,7 +95,7 @@
         <section class="what-we-do" id="what-we-do">
             <h1 class="what-we-do__title montserrat f2-700">WHAT WE DO</h1>
             <div class="what-we-do__container1">
-                <img src="./img/Img (1).png" alt="what-we-do__img1">
+                <img src="./img/Img (1).png" alt="what-we-do__img1" id="img1">
                 <div class="what-we-do__text1">
                     <h3 class="montserrat f1-5-400">ONE WORLD</h3>
                     <h2 class="montserrat f2-700">TRADE CENTER</h2>
@@ -116,22 +116,88 @@
                     <button class="what-we-do__btn2 montserrat f1-5-400">MORE DETAILS</button>
                     <div><i class="fa-solid fa-location-dot"></i> Hong Kong - 1588 feet </div>
                 </div>
-                <img src="./img/Img.png" alt="what-we-do__img2">
+                <img src="./img/Img.png" alt="what-we-do__img2" id="img2">
             </div>
         </section>
         <!-- Latest News Section -->
-        <section class="latest-news-container">
-            <h1 class="montserrat f2-700">LATEST NEWS</h1>
+        <section class="latest-news-container" id="latest-news">
+            <h1 class="latest-news-container__title montserrat f2-700">LATEST NEWS</h1>
             <div class="latest-news-slick-slider">
-                <div>your content</div>
-                <div>your content</div>
-                <div>your content</div>
-                <div>your content</div>
-                <div>your content</div>
+                <div class="latest-news-slick-slider__cards">
+                    <img src="./img/news-slider-img1.png" alt="latest-news-slick-slider__img1" class="img-cards" />
+                    <div>
+                        <h1 class="monteserrat f2-700">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h1>
+                        <p class="open-sans f1-5-400">
+                            Free directories: directories are perfect for customers that are searching for...
+                        </p>
+                    </div>
+                </div>
+                <div class="latest-news-slick-slider__cards">
+                    <img src="./img/news-slider-img2.png" alt="latest-news-slick-slider__img2" class="img-cards" />
+                    <div>
+                        <h1 class="monteserrat f2-700">EFFECTIVE ADVERTISING POINTERS.</h1>
+                        <p class="open-sans f1-5-400">
+                            Having a home based business is a wonderful asset to your life...
+                        </p>
+                    </div>
+                </div>
+                <div class="latest-news-slick-slider__cards">
+                    <img src="./img/news-slider-img3.png" alt="latest-news-slick-slider__img3" class="img-cards" />
+                    <div>
+                        <h1 class="monteserrat f2-700">HYPNOTIZE YOURSELF INTO THE GHOST.</h1>
+                        <p class="open-sans f1-5-400">
+                            There are many things that are important to catalog design...
+                        </p>
+                    </div>
+                </div>
+                <div class="latest-news-slick-slider__cards">
+                    <img src="./img/news-slider-img4.png" alt="latest-news-slick-slider__img4" class="img-cards" />
+                    <div>
+                        <h1 class="monteserrat f2-700">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h1>
+                        <p class="open-sans f1-5-400">
+                            Free directories: directories are perfect for customers that are searching for...
+                        </p>
+                    </div>
+                </div>
+                <div class="latest-news-slick-slider__cards">
+                    <img src="./img/news-slider-img1.png" alt="latest-news-slick-slider__img5" class="img-cards" />
+                    <div>
+                        <h1 class="monteserrat f2-700">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h1>
+                        <p class="open-sans f1-5-400">
+                            Free directories: directories are perfect for customers that are searching for...
+                        </p>
+                    </div>
+                </div>
+                <div class="latest-news-slick-slider__cards">
+                    <img src="./img/news-slider-img1.png" alt="latest-news-slick-slider__img6" class="img-cards" />
+                    <div>
+                        <h1 class="monteserrat f2-700">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h1>
+                        <p class="open-sans f1-5-400">
+                            Free directories: directories are perfect for customers that are searching for...
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h1 class="gallery-section__title montserrat f2-700">GALLERY</h1>
+            <div class="gallery-section__img">
+                <img src="./img/gallery-img1.png" alt="gallery-section__img1" class="gallery-section__img1">
+                <div>
+                    <div class="gallery-section__group1img">
+                        <img src="./img/gallery-img2.png" alt="gallery-section__img2">
+                        <img src="./img/gallery-img3.png" alt="gallery-section__img3">
+                    </div>
+                    <div>
+                        <img src="./img/gallery-img4.png" alt="gallery-section__img4">
+                        <img src="./img/gallery-img5.png" alt="gallery-section__img5">
+                    </div>
+                </div>
+            </div>
+            <button class="gallery-section__btn montserrat f1-5-400">SEE MORE</button>
+        </section>
         <!-- Google Maps API Section -->
         <!-- Get in Touch Section -->
     </main>
