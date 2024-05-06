@@ -158,6 +158,7 @@ a {
   .gallery-section__img1 {
     margin-right: 10px;
   }
+
   .gallery-section__group1img {
     margin-bottom: 10px;
   }
@@ -165,5 +166,6 @@ a {
 
 .gallery-section__btn {
   @include btn-style;
-  justify-content: center;
+  margin-top: 100px;
+  margin-left: 1400px;
 }

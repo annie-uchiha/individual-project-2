@@ -194,5 +194,6 @@ a {
   color: #2c4058;
   cursor: pointer;
   margin: 20px;
-  justify-content: center;
+  margin-top: 100px;
+  margin-left: 1400px;
 }
