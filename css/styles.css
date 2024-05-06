@@ -171,11 +171,9 @@ a {
 .latest-news-slick-slider__cards {
   color: #2c4058;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 200px;
-  width: 370px;
-  height: 514px;
+  flex-direction: column;
+  width: 100px;
+  height: 400px;
   border: 1px solid #ffffff;
 }
 
@@ -205,4 +203,33 @@ a {
   margin: 20px;
   margin-top: 100px;
   margin-left: 1400px;
+}
+
+.map-section {
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  background-image: linear-gradient(to right, rgba(85, 183, 255, 0.9), rgba(126, 90, 255, 0.9)), url("../img/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 200px;
+  justify-content: space-around;
+}
+
+.footer__logo {
+  margin-top: 200px;
+  width: 255px;
+  height: 55px;
+}
+
+.social-icons-footer {
+  margin-top: 200px;
+  font-size: 2rem;
 }

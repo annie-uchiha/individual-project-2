@@ -146,9 +146,10 @@ a {
 
 .latest-news-slick-slider__cards {
   color: $textTitleColor;
-  @include flex-row-center;
-  width: 370px;
-  height: 514px;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 400px;
   border: 1px solid $textColor;
 }
 
@@ -173,4 +174,37 @@ a {
   @include btn-style;
   margin-top: 100px;
   margin-left: 1400px;
+}
+
+// MAP
+
+.map-section {
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// CONTACT FORM
+
+// FOOTER
+
+.footer {
+  background-image: linear-gradient($direction, $colors),
+    url("../img/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  @include flex-row-center;
+  justify-content: space-around;
+}
+
+.footer__logo {
+  margin-top: 200px;
+  width: 255px;
+  height: 55px;
+}
+
+.social-icons-footer {
+  margin-top: 200px;
+  font-size: 2rem;
 }
