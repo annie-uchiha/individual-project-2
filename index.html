@@ -47,8 +47,7 @@
     <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="./css/media-query.css" type="text/css" />
     <link rel="stylesheet" href="./css/styles.css" type="text/css" />
-    <script async src="main.js"></script>
-    <script async src="jquery.js"></script>
+    <script async src="./js/main.js"></script>
 </head>
 
 <body>
@@ -76,7 +75,7 @@
                 </div>
             </nav>
             <div class="titles-top-of-page animate__fadeInDown">
-                <h1 class="titles-top-of-page__h1 montserrat f3-700">SIMPLE & MODERN</h1>
+                <h1 class="titles-top-of-page__h1 montserrat f3-700" style="color: white">SIMPLE & MODERN</h1>
                 <h2 class="titles-top-of-page__h2 montserrat f1-5-400">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h2>
                 <a href="#what-we-do"><i class="fa-solid fa-circle-arrow-down"></i></a>
             </div>
@@ -196,8 +195,32 @@
                     </div>
                 </div>
             </div>
-            <button class="gallery-section__btn montserrat f1-5-400">SEE MORE</button>
+
+            <section class="additional-images">
+                <div class="gallery-section__group2img">
+                    <img src="./img/gallery-img7.png" alt="gallery-section__img7" style="margin: 5px;">
+                    <img src="./img/gallery-img10.png" alt="gallery-section__img10" style="margin: 5px;">
+                    <img src="./img/gallery-img8.png" alt="gallery-section__img8" style="margin: 5px;">
+                    <img src="./img/gallery-img9.png" alt="gallery-section__img9" style="margin: 5px;">
+                </div>
+                <div class="gallery-section__group2img">
+                    <img src="./img/gallery-img9.png" alt="gallery-section__img9" style="margin: 5px;">
+                    <img src="./img/gallery-img8.png" alt="gallery-section__img8" style="margin: 5px;">
+                    <img src="./img/gallery-img10.png" alt="gallery-section__img10" style="margin: 5px;">
+                    <img src="./img/gallery-img7.png" alt="gallery-section__img7" style="margin: 5px;">
+                </div>
+                <div class="gallery-section__group2img">
+                    <img src="./img/gallery-img10.png" alt="gallery-section__img10" style="margin: 5px;">
+                    <img src="./img/gallery-img9.png" alt="gallery-section__img9" style="margin: 5px;">
+                    <img src="./img/gallery-img7.png" alt="gallery-section__img7" style="margin: 5px;">
+                    <img src="./img/gallery-img8.png" alt="gallery-section__img8" style="margin: 5px;">
+                </div>
+            </section>
+
+            <button class="gallery-section__btn montserrat f1-5-400" id="toggleBtn">SHOW MORE</button>
         </section>
+
+
         <!-- MAP SECTION -->
         <section class="map-section">
             <h1 class="montserrat f2-700">GET IN TOUCH</h1>

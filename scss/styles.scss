@@ -155,6 +155,18 @@ a {
 
 // GALLERY
 
+/* Hide the additional images by default */
+.additional-images {
+  display: none;
+}
+
+/* Show the additional images when the 'visible' class is applied */
+.additional-images.visible {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .gallery-section__title {
   margin-top: 100px;
 }
