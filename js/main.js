@@ -3,7 +3,7 @@ $(document).ready(function () {
   $("#toggleBtn").click(function () {
     $(".additional-images").toggle();
     $(this).text(function (i, text) {
-      return text === "SHOW MORE" ? "SHOW LESS" : "SHOW MORE";
+      return text === "SHOW LESS" ? "SHOW MORE" : "SHOW LESS";
     });
 
     // Apply CSS styles to the additional images
