@@ -1,3 +1,4 @@
+// GALLERY - show more/ show less btn functionality
 $(document).ready(function () {
   $("#toggleBtn").click(function () {
     $(".additional-images").toggle();

@@ -100,10 +100,6 @@ a {
 
 //WHAT WE DO
 
-.what-we-do__title {
-  margin-top: 100px;
-}
-
 .what-we-do__container1 {
   @include flex-row-center;
   color: $textTitleColor;
@@ -141,7 +137,6 @@ a {
 .latest-news-container__title {
   color: $textTitleColor;
   text-align: center;
-  margin-top: 100px;
 }
 
 .latest-news-slick-slider__cards {
@@ -167,10 +162,6 @@ a {
   justify-content: center;
 }
 
-.gallery-section__title {
-  margin-top: 100px;
-}
-
 .gallery-section__img {
   @include flex-row-center;
   .gallery-section__img1 {
@@ -185,7 +176,7 @@ a {
 .gallery-section__btn {
   @include btn-style;
   margin-top: 100px;
-  margin-left: 1400px;
+  margin-left: 50%;
 }
 
 // MAP
@@ -194,6 +185,7 @@ a {
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 800px;
 }
 
 // CONTACT FORM
@@ -208,6 +200,7 @@ a {
   height: 550px;
   @include flex-row-center;
   justify-content: space-around;
+  margin-block-start: 30px;
 }
 
 .footer__logo {

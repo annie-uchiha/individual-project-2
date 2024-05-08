@@ -27,6 +27,10 @@
   font-weight: 400;
 }
 
+.mt-100 {
+  margin-top: 100px;
+}
+
 html {
   scroll-padding-top: 100px;
   scroll-behavior: smooth;
@@ -112,10 +116,6 @@ a {
   margin-top: 20px;
 }
 
-.what-we-do__title {
-  margin-top: 100px;
-}
-
 .what-we-do__container1 {
   display: flex;
   flex-direction: row;
@@ -165,7 +165,6 @@ a {
 .latest-news-container__title {
   color: #2c4058;
   text-align: center;
-  margin-top: 100px;
 }
 
 .latest-news-slick-slider__cards {
@@ -189,10 +188,6 @@ a {
   justify-content: center;
 }
 
-.gallery-section__title {
-  margin-top: 100px;
-}
-
 .gallery-section__img {
   display: flex;
   flex-direction: row;
@@ -214,13 +209,14 @@ a {
   cursor: pointer;
   margin: 20px;
   margin-top: 100px;
-  margin-left: 1400px;
+  margin-left: 50%;
 }
 
 .map-section {
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 800px;
 }
 
 .footer {
@@ -233,6 +229,7 @@ a {
   justify-content: center;
   margin-top: 200px;
   justify-content: space-around;
+  margin-block-start: 30px;
 }
 
 .footer__logo {
