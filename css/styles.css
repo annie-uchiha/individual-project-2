@@ -269,6 +269,28 @@ a {
   margin-left: 200px;
 }
 
+.firework {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: explode 3s forwards;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(20);
+    opacity: 0;
+  }
+}
 .footer {
   background-image: linear-gradient(to right, rgba(85, 183, 255, 0.9), rgba(126, 90, 255, 0.9)), url("../img/footer-bg.png");
   background-repeat: no-repeat;

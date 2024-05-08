@@ -17,3 +17,19 @@ $(document).ready(function () {
     }
   });
 });
+
+// CONTACT FORM - FIREWORKS
+document.getElementById('myForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Create fireworks element
+  const fireworks = document.createElement('div');
+  fireworks.classList.add('firework');
+  document.body.appendChild(fireworks);
+
+  // Remove fireworks after 3 seconds
+  setTimeout(function() {
+    fireworks.remove();
+  }, 3000);
+});
+
