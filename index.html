@@ -262,11 +262,10 @@
         <section class="map-section">
             <section class="contacts-form" id="contacts">
                 <h1 class="contacts__title montserrat f2-700">GET IN TOUCH</h1>
-                <div id="form-container">
+                <div class="form-container">
                     <ul class="form-container__ul">
                         <li class="form-container__li open-sans f1-5-400"><i class="fa-solid fa-location-dot"></i> 91
-                            Nolan Extensions
-                            Suite 670</li>
+                            Nolan Extensions Suite 670</li>
                         <li class="form-container__li open-sans f1-5-400"><i class="fa-solid fa-phone"></i> +001
                             356-868-2454</li>
                         <li class="form-container__li open-sans f1-5-400"><i class="fa-solid fa-envelope"></i>
@@ -275,10 +274,17 @@
                             to 19:30PM</li>
                     </ul>
                 </div>
-                <div>
-
+                <div class="contacts-form__inputs">
+                    <form id="myForm">
+                        <input type="text" id="name" class="input-field monteserrat f1-5-400" name=" name"
+                            placeholder="Name"><br>
+                        <input type="email" id="email" class="input-field monteserrat f1-5-400" name=" email"
+                            placeholder="Email"><br><br>
+                        <input type="submit" class="monteserrat contacts-form__btn" value="SUBMIT">
+                    </form>
                 </div>
             </section>
+
 
         </section>
     </main>

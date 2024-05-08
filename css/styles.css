@@ -229,6 +229,20 @@ a {
   background-color: #ffffff;
   transform: translateY(500px);
   margin-left: 1050px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.contacts-form .contacts__title {
+  grid-column: 1/-1;
+  text-align: center;
+}
+.contacts-form .form-container {
+  grid-column: 1;
+}
+.contacts-form .contacts-form__inputs {
+  grid-column: 2;
 }
 .contacts-form .form-container__ul {
   margin-top: 50px;
@@ -236,6 +250,23 @@ a {
 }
 .contacts-form .form-container__li {
   padding-bottom: 50px;
+}
+
+.input-field {
+  line-height: 2rem;
+  border: none;
+  border-bottom: 1px solid #2c4058;
+  margin: 25px;
+}
+
+.contacts-form__btn {
+  border: 1px solid #2c4058;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #2c4058;
+  cursor: pointer;
+  margin: 20px;
+  margin-left: 200px;
 }
 
 .footer {

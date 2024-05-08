@@ -200,6 +200,23 @@ a {
   background-color: $textColor;
   transform: translateY(500px);
   margin-left: 1050px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+
+  .contacts__title {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .form-container {
+    grid-column: 1;
+  }
+
+  .contacts-form__inputs {
+    grid-column: 2;
+  }
 
   .form-container__ul {
     margin-top: 50px;
@@ -208,6 +225,18 @@ a {
   .form-container__li {
     padding-bottom: 50px;
   }
+}
+
+.input-field {
+  line-height: 2rem;
+  border: none;
+  border-bottom: 1px solid $textTitleColor;
+  margin: 25px;
+}
+
+.contacts-form__btn {
+  @include btn-style;
+  margin-left: 200px;
 }
 
 // FOOTER
