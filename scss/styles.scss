@@ -194,12 +194,20 @@ a {
 
 // CONTACT FORM
 .contacts-form {
-  width: 770px;
+  width: 1000px;
   height: 450px;
   border: 1px solid $textTitleColor;
   background-color: $textColor;
-  transform: translateY(550px);
+  transform: translateY(500px);
   margin-left: 1100px;
+
+  .form-container__ul {
+    margin-top: 50px;
+    list-style: none;
+  }
+  .form-container__li {
+    padding-bottom: 50px;
+  }
 }
 
 // FOOTER
@@ -212,7 +220,7 @@ a {
   height: 550px;
   @include flex-row-center;
   justify-content: space-around;
-  margin-block-start: 30px;
+  margin-block-start: -1px;
 }
 
 .footer__logo {

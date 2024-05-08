@@ -223,12 +223,19 @@ a {
 }
 
 .contacts-form {
-  width: 770px;
+  width: 1000px;
   height: 450px;
   border: 1px solid #2c4058;
   background-color: #ffffff;
-  transform: translateY(550px);
+  transform: translateY(500px);
   margin-left: 1100px;
+}
+.contacts-form .form-container__ul {
+  margin-top: 50px;
+  list-style: none;
+}
+.contacts-form .form-container__li {
+  padding-bottom: 50px;
 }
 
 .footer {
@@ -241,7 +248,7 @@ a {
   justify-content: center;
   margin-top: 200px;
   justify-content: space-around;
-  margin-block-start: 30px;
+  margin-block-start: -1px;
 }
 
 .footer__logo {
