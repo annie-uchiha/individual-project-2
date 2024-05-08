@@ -193,10 +193,13 @@ a {
 }
 
 // CONTACT FORM
-#form-container {
-  width: 100%;
-  height: 100vh;
-  position: relative;
+.contacts-form {
+  width: 770px;
+  height: 450px;
+  border: 1px solid $textTitleColor;
+  background-color: $textColor;
+  transform: translateY(550px);
+  margin-left: 1100px;
 }
 
 // FOOTER
