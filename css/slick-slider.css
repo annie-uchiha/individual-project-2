@@ -1,0 +1,83 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.f3-700 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.f2-700 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.f1-5-400 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.latest-news-slick-slider {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #2c4058;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.latest-news-slick-slider__cards {
+  margin: 0 10px;
+}
+
+.img-cards {
+  width: 100%;
+  height: auto;
+}
+
+.latest-news-slick-slider__cards div {
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.latest-news-slick-slider__cards h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.latest-news-slick-slider__cards p {
+  margin-top: 5px;
+  font-size: 14px;
+}
