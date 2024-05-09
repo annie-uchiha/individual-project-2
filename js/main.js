@@ -19,17 +19,19 @@ $(document).ready(function () {
 });
 
 // CONTACT FORM - FIREWORKS
-$(document).ready(function () {
-  $("#myForm").submit(function (event) {
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("myForm");
+  const fireworksContainer = document.getElementById("fireworksContainer");
+
+  form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // Create fireworks element
-    const fireworks = $('<div class="firework"></div>');
-    $("body").append(fireworks);
+    const firework = document.createElement("div");
+    firework.classList.add("firework");
+    fireworksContainer.appendChild(firework);
 
-    // Remove fireworks after 3 seconds
-    setTimeout(function () {
-      fireworks.remove();
-    }, 3000);
+    firework.addEventListener("animationend", function () {
+      fireworksContainer.removeChild(firework);
+    });
   });
 });
