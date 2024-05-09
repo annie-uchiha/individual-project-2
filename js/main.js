@@ -19,7 +19,7 @@ $(document).ready(function () {
 });
 
 // CONTACT FORM - FIREWORKS
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("myForm");
   const fireworksContainer = document.getElementById("fireworksContainer");
 
@@ -34,4 +34,37 @@ document.addEventListener("DOMContentLoaded", function () {
       fireworksContainer.removeChild(firework);
     });
   });
+});*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("myForm");
+  const fireworksContainer = document.getElementById("fireworksContainer");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const redFirework = new Firework("red", fireworksContainer);
+    const blueFirework = new Firework("blue", fireworksContainer);
+    const orangeFirework = new Firework("orange", fireworksContainer);
+  });
 });
+
+function Firework(color, container) {
+  this.element = document.createElement("div");
+  this.element.classList.add("firework", color);
+  this.element.style.left = getRandomPosition(10, 90) + "%";
+  this.element.style.top = getRandomPosition(10, 90) + "%";
+  container.appendChild(this.element);
+
+  this.element.addEventListener("animationend", () => {
+    this.remove();
+  });
+}
+
+Firework.prototype.remove = function () {
+  this.element.parentNode.removeChild(this.element);
+};
+
+function getRandomPosition(min, max) {
+  return Math.random() * (max - min) + min;
+}

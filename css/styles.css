@@ -282,16 +282,46 @@ a {
 .firework {
   width: 10px;
   height: 10px;
-  background-color: red;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 50%;
-  animation: explode 3s forwards;
 }
 
-@keyframes explode {
+.red {
+  background-color: red;
+  animation: explode-red 3s forwards;
+}
+
+.blue {
+  background-color: blue;
+  animation: explode-blue 3s forwards;
+}
+
+.orange {
+  background-color: orange;
+  animation: explode-orange 3s forwards;
+}
+
+@keyframes explode-red {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(20);
+    opacity: 0;
+  }
+}
+@keyframes explode-blue {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(20);
+    opacity: 0;
+  }
+}
+@keyframes explode-orange {
   0% {
     transform: scale(1);
     opacity: 1;
