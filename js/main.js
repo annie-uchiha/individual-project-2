@@ -19,17 +19,17 @@ $(document).ready(function () {
 });
 
 // CONTACT FORM - FIREWORKS
-document.getElementById('myForm').addEventListener('submit', function(event) {
-  event.preventDefault();
+$(document).ready(function () {
+  $("#myForm").submit(function (event) {
+    event.preventDefault();
 
-  // Create fireworks element
-  const fireworks = document.createElement('div');
-  fireworks.classList.add('firework');
-  document.body.appendChild(fireworks);
+    // Create fireworks element
+    const fireworks = $('<div class="firework"></div>');
+    $("body").append(fireworks);
 
-  // Remove fireworks after 3 seconds
-  setTimeout(function() {
-    fireworks.remove();
-  }, 3000);
+    // Remove fireworks after 3 seconds
+    setTimeout(function () {
+      fireworks.remove();
+    }, 3000);
+  });
 });
-
