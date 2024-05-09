@@ -113,6 +113,14 @@ a {
   @include btn-style;
 }
 
+#details1 {
+  display: none;
+}
+
+#display1.active {
+  display: block;
+}
+
 .what-we-do__container2 {
   @include flex-row-center;
   color: $textTitleColor;

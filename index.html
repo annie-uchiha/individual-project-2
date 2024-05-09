@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="./css/media-query.css" type="text/css" />
     <link rel="stylesheet" href="./css/styles.css" type="text/css" />
     <script defer src="./js/main.js"></script>
+    <script src="./js/what-we-do.js"></script>
     <script src="./js/navbar-toggle.js"></script>
 </head>
 
@@ -112,7 +113,15 @@
                         by having the right frame of mind. The truth is, our<br />
                         thoughts are very powerful.
                     </p>
-                    <button class="what-we-do__btn1 montserrat f1-5-400">
+                    <div class="additional-text open-sans f1-5-400" style="display: none;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                            Sed at libero odio. Donec eleifend erat et mi condimentum,<br> sed hendrerit purus
+                            luctus. Nullam aliquet, turpis vel tempor<br> hendrerit,
+                            odio dui consequat orci, id fringilla quam erat
+                            auctor eros.</p>
+                    </div>
+                    <button id="toggleBtn1" class="what-we-do__btn1 montserrat f1-5-400"
+                        onclick="toggleAdditionalText()">
                         MORE DETAILS
                     </button>
                     <div>
@@ -130,7 +139,15 @@
                         today we’ll look at the big ‘R’ of recognition and how a<br />
                         digital advertising network may help.
                     </p>
-                    <button class="what-we-do__btn2 montserrat f1-5-400">
+                    <div class="additional-text2" style="display: none;">
+                        <p class="open-sans f1-5-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed at libero odio. Donec eleifend erat<br> et mi condimentum, sed hendrerit purus
+                            luctus. Nullam aliquet, turpis vel tempor hendrerit,<br>
+                            odio dui consequat orci, id fringilla quam erat
+                            auctor eros.</p>
+                    </div>
+                    <button id="toggleBtn2" class="what-we-do__btn2 montserrat f1-5-400"
+                        onclick="toggleAdditionalText2()">
                         MORE DETAILS
                     </button>
                     <div>
@@ -139,6 +156,7 @@
                 </div>
                 <img src="./img/Img.png" alt="what-we-do__img2" id="img2" />
             </div>
+
         </section>
         <!-- Latest News Section -->
         <section class="latest-news-container" id="latest-news">

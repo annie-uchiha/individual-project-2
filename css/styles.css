@@ -136,6 +136,14 @@ a {
   margin: 20px;
 }
 
+#details1 {
+  display: none;
+}
+
+#display1.active {
+  display: block;
+}
+
 .what-we-do__container2 {
   display: flex;
   flex-direction: row;
