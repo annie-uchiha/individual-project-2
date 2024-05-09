@@ -168,6 +168,7 @@ a {
   background-image: url("../img/Background-latest-news.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 1035px;
 }
 
 .latest-news-container__title {
@@ -177,12 +178,20 @@ a {
 }
 
 .latest-news-slick-slider__cards {
-  color: #2c4058;
   display: flex;
   flex-direction: column;
-  width: 50px;
-  height: 400px;
-  border: 1px solid #ffffff;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  height: 80%;
+}
+
+.latest-news-slick-slider__cards img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
 /* Hide the additional images by default */

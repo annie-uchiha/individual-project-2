@@ -19,7 +19,8 @@ $(document).ready(function () {
 });
 
 // CONTACT FORM - FIREWORKS
-/*document.addEventListener("DOMContentLoaded", function () {
+/* This code worked but only for one circle firework
+  document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("myForm");
   const fireworksContainer = document.getElementById("fireworksContainer");
 
