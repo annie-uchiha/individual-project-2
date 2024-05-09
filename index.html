@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="./css/media-query.css" type="text/css" />
     <link rel="stylesheet" href="./css/styles.css" type="text/css" />
     <script defer src="./js/main.js"></script>
+    <script src="./js/navbar-toggle.js"></script>
 </head>
 
 <body>
@@ -59,18 +60,19 @@
                     <img src="./img/Logo.png" alt="Logo" class="logo-img" />
                 </div>
                 <ul class="nav-links">
-                    <li class="nav-item active montserrat f2-400">
-                        <a href=""><i class="fa-solid fa-circle"></i> About Us</a>
+                    <li class="nav-item active montserrat f2-400" onclick="toggleNavItem(this)">
+                        <a href="#"><i class="fa-regular fa-circle"></i> About Us</a>
                     </li>
-                    <li class="nav-item montserrat f2-400">
-                        <a href="#what-we-do"><i class="fa-regular fa-circle"></i> Projects</a>
+                    <li class="nav-item montserrat f2-400" onclick="toggleNavItem(this)">
+                        <a href="#"><i class="fa-regular fa-circle"></i> Projects</a>
                     </li>
-                    <li class="nav-item montserrat f2-400">
-                        <a href="#latest-news"><i class="fa-regular fa-circle"></i> News</a>
+                    <li class="nav-item montserrat f2-400" onclick="toggleNavItem(this)">
+                        <a href="#"><i class="fa-regular fa-circle"></i> News</a>
                     </li>
-                    <li class="nav-item montserrat f2-400">
-                        <a href="#contacts"><i class="fa-regular fa-circle"></i> Contact</a>
+                    <li class="nav-item montserrat f2-400" onclick="toggleNavItem(this)">
+                        <a href="#"><i class="fa-regular fa-circle"></i> Contact</a>
                     </li>
+
                 </ul>
                 <div class="social-icons">
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>

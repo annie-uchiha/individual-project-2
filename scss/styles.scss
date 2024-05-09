@@ -164,6 +164,8 @@ a {
 
 .gallery-section__img {
   @include flex-row-center;
+  margin-top: 50px;
+
   .gallery-section__img1 {
     margin-right: 10px;
   }
