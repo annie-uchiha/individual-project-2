@@ -180,6 +180,14 @@ a {
   background-color: $textTitleColor;
 }
 
+.slick-prev {
+  transform: translateX(-100px);
+}
+
+.slick-next {
+  transform: translateX(2350px);
+}
+
 // GALLERY
 
 /* Hide the additional images by default */

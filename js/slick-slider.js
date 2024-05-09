@@ -6,9 +6,9 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     dots: true,
     prevArrow:
-      '<button class="slick-prev" aria-label="Previous" type="button"><i class="fa-solid fa-circle-arrow-left"></i></button>',
+      '<button class="slick-prev" aria-label="Previous" style="color:#2c4058" type="button"><i class="fa-solid fa-circle-arrow-left"></i></button>',
     nextArrow:
-      '<button class="slick-next" aria-label="Next" type="button"><i class="fa-solid fa-circle-arrow-right"></i></button>',
+      '<button class="slick-next" aria-label="Next" style="color:#2c4058" type="button"><i class="fa-solid fa-circle-arrow-right"></i></button>',
     responsive: [
       {
         breakpoint: 768,

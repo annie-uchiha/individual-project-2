@@ -208,6 +208,14 @@ a {
   background-color: #2c4058;
 }
 
+.slick-prev {
+  transform: translateX(-100px);
+}
+
+.slick-next {
+  transform: translateX(2350px);
+}
+
 /* Hide the additional images by default */
 .additional-images {
   display: none;
