@@ -166,6 +166,20 @@ a {
   margin-bottom: 20px;
 }
 
+.slick-dots li button {
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  width: 15px;
+  height: 15px;
+  background-color: $textColor;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+  background-color: $textTitleColor;
+}
+
 // GALLERY
 
 /* Hide the additional images by default */
