@@ -69,3 +69,10 @@ Firework.prototype.remove = function () {
 function getRandomPosition(min, max) {
   return Math.random() * (max - min) + min;
 }
+
+// Map API
+
+var map = tt.map({
+  key: "BI1nt46OhaGbjm5KrpBWubG5rBiAiAJI",
+  container: "map",
+});

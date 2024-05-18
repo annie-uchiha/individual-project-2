@@ -253,12 +253,6 @@ a {
   margin-left: 50%;
 }
 
-.map-section {
-  background-image: url("../img/map.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 800px;
-}
 .map-section .map-section__title {
   padding-top: 100px;
 }
@@ -268,7 +262,7 @@ a {
   height: 450px;
   border: 1px solid #2c4058;
   background-color: #ffffff;
-  transform: translateY(500px);
+  transform: translateY(-300px);
   margin-left: 1050px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -372,7 +366,7 @@ a {
   justify-content: center;
   margin-top: 200px;
   justify-content: space-around;
-  margin-block-start: -1px;
+  margin-block-start: -460px;
 }
 
 .footer__logo {

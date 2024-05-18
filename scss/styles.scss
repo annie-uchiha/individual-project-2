@@ -224,11 +224,6 @@ a {
 // MAP
 
 .map-section {
-  background-image: url("../img/map.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 800px;
-
   .map-section__title {
     padding-top: 100px;
   }
@@ -240,7 +235,7 @@ a {
   height: 450px;
   border: 1px solid $textTitleColor;
   background-color: $textColor;
-  transform: translateY(500px);
+  transform: translateY(-300px);
   margin-left: 1050px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -346,7 +341,7 @@ a {
   height: 550px;
   @include flex-row-center;
   justify-content: space-around;
-  margin-block-start: -1px;
+  margin-block-start: -460px;
 }
 
 .footer__logo {
