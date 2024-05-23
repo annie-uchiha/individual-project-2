@@ -1,18 +1,78 @@
-import { Firework, initializeMap, setupGalleryToggle } from "./helpers.js";
+// GALLERY - show more/ show less btn functionality
+$(document).ready(function () {
+  $("#toggleBtn").click(function () {
+    $(".additional-images").toggle();
+    $(this).text(function (i, text) {
+      return text === "SHOW LESS" ? "SHOW MORE" : "SHOW LESS";
+    });
 
-document.addEventListener("DOMContentLoaded", function () {
-  setupGalleryToggle();
+    // Apply CSS styles to the additional images
+    if ($(".additional-images").is(":visible")) {
+      $(".gallery-section__group2img").css({
+        display: "flex",
+        "flex-direction": "row",
+        "justify-content": "center",
+        margin: "10px",
+      });
+    }
+  });
+});
 
+// CONTACT FORM - FIREWORKS
+/* This code worked but only for one circle firework
+  document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("myForm");
   const fireworksContainer = document.getElementById("fireworksContainer");
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    new Firework("red", fireworksContainer);
-    new Firework("blue", fireworksContainer);
-    new Firework("orange", fireworksContainer);
-  });
+    const firework = document.createElement("div");
+    firework.classList.add("firework");
+    fireworksContainer.appendChild(firework);
 
-  initializeMap("map");
+    firework.addEventListener("animationend", function () {
+      fireworksContainer.removeChild(firework);
+    });
+  });
+});*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("myForm");
+  const fireworksContainer = document.getElementById("fireworksContainer");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const redFirework = new Firework("red", fireworksContainer);
+    const blueFirework = new Firework("blue", fireworksContainer);
+    const orangeFirework = new Firework("orange", fireworksContainer);
+  });
+});
+
+function Firework(color, container) {
+  this.element = document.createElement("div");
+  this.element.classList.add("firework", color);
+  this.element.style.left = getRandomPosition(10, 90) + "%";
+  this.element.style.top = getRandomPosition(10, 90) + "%";
+  container.appendChild(this.element);
+
+  this.element.addEventListener("animationend", () => {
+    this.remove();
+  });
+}
+
+Firework.prototype.remove = function () {
+  this.element.parentNode.removeChild(this.element);
+};
+
+function getRandomPosition(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+// Map API
+
+var map = tt.map({
+  key: "BI1nt46OhaGbjm5KrpBWubG5rBiAiAJI",
+  container: "map",
 });
