@@ -1,31 +1,10 @@
-function toggleAdditionalText() {
-  var additionalText = document.querySelector(".additional-text");
-  var toggleBtn = document.getElementById("toggleBtn1");
+import { selectors } from "./_variables.js";
+import { toggleText } from "./_helpers.js";
 
-  if (
-    additionalText.style.display === "none" ||
-    additionalText.style.display === ""
-  ) {
-    additionalText.style.display = "block";
-    toggleBtn.textContent = "LESS DETAILS";
-  } else {
-    additionalText.style.display = "none";
-    toggleBtn.textContent = "MORE DETAILS";
-  }
-}
+document.querySelector(selectors.toggleBtn1).addEventListener("click", () => {
+  toggleText(selectors.additionalText, selectors.toggleBtn1);
+});
 
-function toggleAdditionalText2() {
-  var additionalText = document.querySelector(".additional-text2");
-  var toggleBtn = document.getElementById("toggleBtn2");
-
-  if (
-    additionalText.style.display === "none" ||
-    additionalText.style.display === ""
-  ) {
-    additionalText.style.display = "block";
-    toggleBtn.textContent = "LESS DETAILS";
-  } else {
-    additionalText.style.display = "none";
-    toggleBtn.textContent = "MORE DETAILS";
-  }
-}
+document.querySelector(selectors.toggleBtn2).addEventListener("click", () => {
+  toggleText(selectors.additionalText2, selectors.toggleBtn2);
+});
