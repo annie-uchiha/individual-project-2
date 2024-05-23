@@ -1,7 +1,7 @@
-import { toggleNavItem } from "./helpers.js";
+import { toggleNavItem } from "./_helpers.js";
 
 document.querySelectorAll(".nav-item").forEach((item) => {
-  item.addEventListener("click", function () {
-    toggleNavItem(this);
+  item.addEventListener("click", () => {
+    toggleNavItem(item);
   });
 });
